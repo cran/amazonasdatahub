@@ -1,0 +1,25 @@
+Package: amazonasdatahub
+Title: Integrating Data, Research, and Education
+Version: 1.2.1
+Authors@R: 
+    c(
+      person("Nelson", "Carvalho", email = "nelsoncarvalho.negocios@gmail.com", role = c("aut", "cre")),
+      person("Leonardo", "Nascimento", email = "nascimento@ufam.edu.br", role = c("aut"))
+    )
+Description: Various datasets from the state of Amazonas (AM), Brazil, to apply Deep Learning and statistical methods.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+LazyData: TRUE
+LazyDataCompression: xz
+Depends: R (>= 3.5)
+Imports: dplyr, ggplot2
+Suggests: rmarkdown, forcats
+URL: https://onelsoncarvalho.github.io/amazonasdatahub/
+NeedsCompilation: no
+Packaged: 2026-10-26 00:26:28 UTC; nelsonworkstation
+Author: Nelson Carvalho [aut, cre],
+  Leonardo Nascimento [aut]
+Maintainer: Nelson Carvalho <nelsoncarvalho.negocios@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-11-10 15:30:08 UTC

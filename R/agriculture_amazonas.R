@@ -1,0 +1,38 @@
+#' agriculture_amazonas - Plant production data from the Institute of Sustainable Agricultural and Forestry Development of Amazonas - IDAM (2023).
+#'
+#' This database, which is the consolidation of data from IDAM's activity reports, provides crop production data for crops that this institute considers a priority.
+#'
+#' @format ## `agriculture_amazonas' A data frame with 1072 rows and 13 columns:
+#' \describe{
+#'   \item{municipality}{Municipality}
+#'   \item{local_unit}{Local Unit of the Institute}
+#'   \item{n_beneficiary}{Number of assisted beneficiaries}
+#'   \item{planted}{Planted area in hectares (ha)}
+#'   \item{harvested}{Harvested area in hectares (ha)}
+#'   \item{production}{Production (in the unit of measurement - measure)}
+#'   \item{estimated_n_beneficiary}{Estimate of the number of beneficiaries}
+#'   \item{estimated_planted}{Estimate of the planted area (ha)}
+#'   \item{estimated_harvested}{Estimate of the harvested area (ha)}
+#'   \item{estimated_production}{Estimate of production (in the unit of measurement - measure)}
+#'   \item{measure}{Unit of Measurement of production}
+#'   \item{cultivation}{Cultivation}
+#'   \item{year}{Year of cultivation}
+#' }
+#'
+#' @source INSTITUTO DE DESENVOLVIMENTO AGROPECUÁRIO E FLORESTAL SUSTENTÁVEL DO ESTADO DO AMAZONAS (IDAM). Relatório de Atividades (RAT 23-2). Manaus: IDAM, 2023. Disponível em: https://www.idam.am.gov.br/biblioteca/relatorio-de-atividades-rat-23-2/.
+#'
+#' @examples
+#' \donttest{
+#' # Cassava production plot (Gráfico de Produção de Mandioca)
+#' mandioca_prod <- agriculture_amazonas[agriculture_amazonas$cultivation == "Mandioca", ]
+#' plot(
+#'   mandioca_prod$planted,
+#'   mandioca_prod$harvested,
+#'   xlab = "Planted area (hectare)",
+#'   ylab = "Harvested area (hectare)",
+#'   main = "Cassava production in Amazonas",
+#'   sub = "Planted area x Harvested Area"
+#' )
+#' }
+#'
+"agriculture_amazonas"
